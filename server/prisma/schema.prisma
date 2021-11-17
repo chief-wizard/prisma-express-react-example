@@ -10,13 +10,16 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model goods {
- id          Int           @id @default(autoincrement())
- name        String        @unique
- type	       String
- category    String 
- price       Float
- description String
- image       String
- stock       Int
-}
+// From the source git repo - kept here, commented out, until we
+// decide we don't want it in our new repo.
+// ----------------------------------------------------------------
+// model goods {
+//  id          Int           @id @default(autoincrement())
+//  name        String        @unique
+//  type	       String
+//  category    String 
+//  price       Float
+//  description String
+//  image       String
+//  stock       Int
+// }
