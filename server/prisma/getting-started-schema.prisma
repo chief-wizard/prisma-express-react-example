@@ -1,0 +1,38 @@
+// file: prisma-express-react-example/server/prisma/getting-started-schema.prisma
+
+datasource db {
+    provider = "sqlite"
+    url = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Supplier {
+    id Int @id @default(autoincrement())
+    name String @unique
+    contact String
+    email String
+    phone_num String
+    address String
+}
+
+model Product {
+    id Int @id @default(autoincrement())
+    name String @unique
+    type String
+    category String
+    ingredients Ingredient[]
+    price Float
+}
+
+model Ingredient {
+    id Int @id @default(autoincrement())
+    name String @unique
+    allergen Boolean
+    vegan Boolean
+    vegetarian Boolean
+    products Product ? @relation(fields: [products_id], references: [id])
+    products_id Int ?
+}
