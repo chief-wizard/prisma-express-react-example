@@ -1,10 +1,12 @@
 # prisma-express-react-example
+
 Full-stack WOD Demo App built on Express and React in JavaScript 
 
 ## Run
-cd server && npm i && node app.js &
 
-cd ../client && npm i && npm start
+`cd server && npm i && node app.js &`
+
+`cd ../client && npm i && npm start`
 
 ### Source URL
 
