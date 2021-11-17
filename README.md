@@ -1,3 +1,5 @@
+COPIED FROM https://github.com/AaronWPhillips/WOD-express-react
+
 # WOD-express-react
 Full-stack WOD Demo App built on Express and React in JavaScript 
 
